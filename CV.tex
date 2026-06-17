@@ -9,6 +9,12 @@
 \usepackage{changepage} % for adjustwidth
 \usepackage{tabularx} % for tabularx environment
 \urlstyle{same}
+\newcolumntype{H}{>{\raggedright\hangindent=1.5em\hangafter=1\arraybackslash}X}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{Z}{>{\raggedleft\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}p{0.95in}}
+\newcolumntype{D}{>{\raggedleft\arraybackslash}l}
+\newcommand{\paperentry}[1]{\noindent\hangindent=1.5em\hangafter=1 #1\par}
 
 \begin{document}
 
@@ -32,7 +38,7 @@ Phone: (+81) 03-5427-1574
 Macroeconomics, Macro Labor, Macro Finance
 
 \section*{EDUCATION}
-\begin{tabular}{@{}lll}
+\begin{tabularx}{\linewidth}{@{}l Y R@{}}
 \makecell[tl]{University of California, San Diego\\\hspace{1em}California, U.S.A.}&\makecell[tl]{
 Ph.D. in Economics\\
 Committee:\\
@@ -44,31 +50,31 @@ Committee:\\
 \hspace{1em}Ulrike Schaede}&2017--2023\\
 \makecell[tl]{Graduate School of University of Tokyo\\\hspace{1em}Tokyo, Japan}& (only finished course work)&2015--2017\\
 \makecell[tl]{Keio University\\\hspace{1em}Tokyo, Japan}&\makecell[tl]{B.A. in Economics\\(Summa Cum Laude)}&2011--2015\\
-\end{tabular}
+\end{tabularx}
 
 \section*{CURRENT POSITIONS}
-\begin{tabular}{@{}lll}
+\begin{tabularx}{\linewidth}{@{}l Y R@{}}
 Assistant Professor &Faculty of Economics, Keio University& 2026--present\\
-\end{tabular}
+\end{tabularx}
 
 \section*{PREVIOUS POSITIONS}
-\begin{tabular}{@{}lll}
+\begin{tabularx}{\linewidth}{@{}l Y R@{}}
 Assistant Professor &Faculty of Economics, Hitotsubashi University& 2023--2026\\
-\end{tabular}
+\end{tabularx}
 
 \section*{OTHER RELEVANT POSITIONS HELD}
-\begin{tabular}{@{}lll}
+\begin{tabularx}{\linewidth}{@{}l Y R@{}}
 Project Researcher &University of Tokyo& 2023--2026\\
 Research Assistant &University of Tokyo (Prof. Taisuke Nakata)& 2023\\
 Research Assistant &UCSD (Prof. Mark Jacobsen)& 2022\\
 Intern &International Monetary Fund (Alexis Meyer Cirkel)& 2021\\
 Lead Developer &QuantEcon& 2017\\
 Research Assistant &University of Tokyo (Prof. Tomohiro Hirano)& 2015--2017
-\end{tabular}
+\end{tabularx}
 
 \section*{FELLOWSHIP, HONORS, AND AWARDS}
-\begin{tabularx}{\linewidth}{@{}XXl}
-Grant-in-aid for Studies on Economics and Finance & Zengin Foundation & 2026-2028 \\
+\begin{tabularx}{\linewidth}{@{}H Y R@{}}
+Grant-in-aid for Studies on Economics and Finance & Zengin Foundation & 2026--2028 \\
 Joint Usage / Research Center&Institute of Economic Research, Hitotsubashi University&2025\\
 Koueki Shintaku Yamada Gakujutsu Kenkyu Shourei Kikin&Mitsubishi UFJ Trust and Banking&2024--2026\\
 Grant-in-Aid for Early-Career Scientists&Japan Society for the Promotion of Science&2024--2028\\
@@ -78,60 +84,61 @@ Graduate Student Research Funding&University of California, San Diego&2019\\
 Japan-IMF Scholarship&Japan IMF Scholarship Program for Advanced Studies&2017--2019
 \end{tabularx}
 
+\section*{PUBLISHED PAPERS}
+\paperentry{``Quarantine policy and labor market outcomes'' (with Asako Chiba and Taisuke Nakata), \textit{Macroeconomic Dynamics}, 30, e39, 2026. \href{https://doi.org/10.1017/S1365100526101102}{doi:10.1017/S1365100526101102}}
+% \begin{adjustwidth}{1em}{1em}
+% Abstract: During the Covid-19 pandemic, many governments recommended quarantine to those who had close contact with infected individuals. We conducted a large-scale retrospective survey to study the consequences of such quarantine for labor outcomes. A sizable fraction of quarantined workers experienced reductions in hours worked and earnings, not only during quarantine but also after quarantine. Even uninfected workers experienced negative labor impacts, likely capturing the pure effects of quarantine independent of the effects of Covid-19 symptoms. Non-regular workers and workers without remote work options were more negatively affected by quarantine. We estimate that the quarantine resulted in a large reduction in the aggregate hours and that the reduction is mainly due to the scarring effects.
+% \end{adjustwidth}
+\vspace{1em}
 \section*{WORKING PAPERS}
-``The Secular Decline in Aggregate Hours Worked in Japan: A Reinterpretation''
-\begin{adjustwidth}{1em}{1em}
-Abstract: Average hours worked per adult in Japan fell by around one third over the last half-century. The leading explanation focuses on government policies that distort labor supply decisions. This paper provides a new interpretation that stresses the role of income effects in preferences. Through the lens of a model of the market and home sectors and using non-homothetic preferences, I show that the main driver of Japan's decline in hours worked is income effects, rather than labor-market distortions or population aging. The model predicts that average hours of leisure will rise and home-production hours will remain roughly constant over the period, which is consistent with evidence from time-use surveys. An alternative calibration based on only labor market distortions counterfactually predicts that home production hours will rise.
-\end{adjustwidth}
-\vspace{1em}
-``A Macroeconomic Model with Rational Exuberance: Temporarily Explosive Land Price Dynamics'' Joint with Tomohiro Hirano and Shuping Shi
-\begin{adjustwidth}{1em}{1em}
-Abstract: We provide a macroeconomic model with rational exuberance in which the land price-to-dividend ratio (P-D ratio) shows temporarily explosive dynamics as observed in data. In our model, the economy departs from a stationary economy and generates the explosive land price dynamics, followed by a large reduction. The explosive dynamics are generated when (i) the economy is growing, and (ii) the economy entails high leverage. We also show that the explosive dynamics is closely related to the existence of bubbles, and the condition for the existence of bubbles is in line with the existing empirical method to detect bubbles. The macroeconomic dynamics with bubbles and without bubbles differ qualitatively. 
-\end{adjustwidth}
-\vspace{1em}
-``Quarantine and Its Scar on Labor'' Joint with Asako Chiba and Taisuke Nakata
-\begin{adjustwidth}{1em}{1em}
-Abstract: During the Covid-19 pandemic, many governments recommended quarantine to those who had close contact with infected individuals. We conducted a large-scale retrospective survey to study the consequences of such quarantine for labor outcomes. A sizable fraction of quarantined workers experienced reductions in hours worked and earnings, not only during quarantine but also after quarantine. Even uninfected workers experienced negative labor impacts, likely capturing the pure effects of quarantine independent of the effects of Covid-19 symptoms. Non-regular workers and workers without remote work options were more negatively affected by quarantine. We estimate that the quarantine resulted in a large reduction in the aggregate hours and that the reduction is mainly due to the scarring effects.
-\end{adjustwidth}
-\vspace{1em}
-``COVID-19 Infection and Its Labor Supply Impact: Evidence from a Large-scale Survey in Japan'' Joint with Asako Chiba, Taisuke Nakata, Shusaku Sasaki, Reo Takaku
-\begin{adjustwidth}{1em}{1em}
-Abstract: We conduct a large-scale retrospective survey to investigate how COVID-19 infection affected the labor outcomes of infected workers in Japan. Many infected workers --- including those without any COVID-19 symptoms --- experienced some reductions in hours worked or earnings immediately after infection. The negative labor impacts often lasted for more than a month. The negative labor impacts were particularly pronounced for contract workers, non-regular workers, workers without access to work-from-home, and those unvaccinated. Our estimate based on the survey and other official statistics indicates that COVID-19 infection had a non-negligible negative impact on the aggregate labor supply in 2022.
-\end{adjustwidth}
-\vspace{1em}
-``Generational war on inflation: Optimal inflation rates for the young and the old'' Joint with Ippei Fujiwara and Yuichiro Waki
-\begin{adjustwidth}{1em}{1em}
-Abstract: How does a grayer society affect the political decision making regarding inflation rates? Is deflation preferred as society ages? In order to answer these questions, we compute the optimal inflation rates for the young and the old respectively and explore how they change with demographic factors, by using a New Keynesian model with overlapping generations. According to our simulation results, there indeed exists a tension between the young and the old on the optimal inflation rates. The optimal inflation rates are different between the young and the old. Also, they can be significantly different from zero, in particular, when heterogeneous impacts from inflation via nominal asset holdings are considered. The optimal inflation rates for the old can be largely negative, reflecting their positive nominal asset holdings as well as lower effective discount factor. Societal aging may exert downward pressure on inflation rates through a politico-economic mechanism.
-\end{adjustwidth}
+\paperentry{``The Secular Decline in Aggregate Hours Worked in Japan: A Reinterpretation''}
+% \begin{adjustwidth}{1em}{1em}
+% Abstract: Average hours worked per adult in Japan fell by around one third over the last half-century. The leading explanation focuses on government policies that distort labor supply decisions. This paper provides a new interpretation that stresses the role of income effects in preferences. Through the lens of a model of the market and home sectors and using non-homothetic preferences, I show that the main driver of Japan's decline in hours worked is income effects, rather than labor-market distortions or population aging. The model predicts that average hours of leisure will rise and home-production hours will remain roughly constant over the period, which is consistent with evidence from time-use surveys. An alternative calibration based on only labor market distortions counterfactually predicts that home production hours will rise.
+% \end{adjustwidth}
+% \vspace{1em}
+\paperentry{``A Macroeconomic Model with Rational Exuberance: Temporarily Explosive Land Price Dynamics'' (with Tomohiro Hirano and Shuping Shi)}
+% \begin{adjustwidth}{1em}{1em}
+% Abstract: We provide a macroeconomic model with rational exuberance in which the land price-to-dividend ratio (P-D ratio) shows temporarily explosive dynamics as observed in data. In our model, the economy departs from a stationary economy and generates the explosive land price dynamics, followed by a large reduction. The explosive dynamics are generated when (i) the economy is growing, and (ii) the economy entails high leverage. We also show that the explosive dynamics is closely related to the existence of bubbles, and the condition for the existence of bubbles is in line with the existing empirical method to detect bubbles. The macroeconomic dynamics with bubbles and without bubbles differ qualitatively. 
+% \end{adjustwidth}
+% \vspace{1em}
+\paperentry{``COVID-19 Infection and Its Labor Supply Impact: Evidence from a Large-scale Survey in Japan'' (with Asako Chiba, Taisuke Nakata, Shusaku Sasaki, Reo Takaku)}
+% \begin{adjustwidth}{1em}{1em}
+% Abstract: We conduct a large-scale retrospective survey to investigate how COVID-19 infection affected the labor outcomes of infected workers in Japan. Many infected workers --- including those without any COVID-19 symptoms --- experienced some reductions in hours worked or earnings immediately after infection. The negative labor impacts often lasted for more than a month. The negative labor impacts were particularly pronounced for contract workers, non-regular workers, workers without access to work-from-home, and those unvaccinated. Our estimate based on the survey and other official statistics indicates that COVID-19 infection had a non-negligible negative impact on the aggregate labor supply in 2022.
+% \end{adjustwidth}
+% \vspace{1em}
+\paperentry{``Generational war on inflation: Optimal inflation rates for the young and the old'' (with Ippei Fujiwara and Yuichiro Waki)}
+% \begin{adjustwidth}{1em}{1em}
+% Abstract: How does a grayer society affect the political decision making regarding inflation rates? Is deflation preferred as society ages? In order to answer these questions, we compute the optimal inflation rates for the young and the old respectively and explore how they change with demographic factors, by using a New Keynesian model with overlapping generations. According to our simulation results, there indeed exists a tension between the young and the old on the optimal inflation rates. The optimal inflation rates are different between the young and the old. Also, they can be significantly different from zero, in particular, when heterogeneous impacts from inflation via nominal asset holdings are considered. The optimal inflation rates for the old can be largely negative, reflecting their positive nominal asset holdings as well as lower effective discount factor. Societal aging may exert downward pressure on inflation rates through a politico-economic mechanism.
+% \end{adjustwidth}
 
 \section*{RESEARCH IN PROGRESS}
 % ``Husband's Work-from-home and Wife's Labor Participation''\\
-``The Japanese Land Price Boom as an Expectation-Driven Rational Bubble'' with Ryo Jinnai\\
-``Human capital and Technology Diffusion: Expanding the Discussion of Industrial Policy'' Joint with Alexis Meyer Cirkel\\
-``Hysteresis in Hours Worked''\\
+\paperentry{``The Japanese Land Price Boom as an Expectation-Driven Rational Bubble'' (with Ryo Jinnai)}
+\paperentry{``Human capital and Technology Diffusion: Expanding the Discussion of Industrial Policy'' (with Alexis Meyer Cirkel)}
+\paperentry{``Hysteresis in Hours Worked''}
 
 % \section*{OTHER PROJECTS}
 
 \section*{TEACHING EXPERIENCE}
 \subsubsection*{At Keio University}
-\begin{tabular}{@{}ll}
+\begin{tabularx}{\linewidth}{@{}l Z@{}}
 Money, Banking, and Finance A & Spring \& Summer 2026\\
-\end{tabular}
+\end{tabularx}
 
 \subsubsection*{At Hitotsubashi University}
-\begin{tabular}{@{}ll}
+\begin{tabularx}{\linewidth}{@{}l Z@{}}
 Basic Macroeconomics&Fall \& Winter 2023, Spring \& Summer 2024, \\
                     &Fall \& Winter 2024, Spring \& Summer 2025\\
                     &Fall \& Winter 2025, Spring \& Summer 2026\\
-\end{tabular}
+\end{tabularx}
 
 \subsubsection*{At University of Tokyo}
-\begin{tabular}{@{}ll}
+\begin{tabularx}{\linewidth}{@{}l Z@{}}
 Economic Analysis of Pandemics (guest speaker)&Spring 2025
-\end{tabular}
+\end{tabularx}
 
 \subsubsection*{As a teaching assistant at UC San Diego}
-\begin{tabular}{@{}lll}
+\begin{tabularx}{\linewidth}{@{}l Y R@{}}
 Data Analytics for the Social Sciences&Prof. David Arnold&Spring 2023\\
 Data Analytics for the Social Sciences&Prof. David Arnold&Spring 2022\\
 Short Run Macroeconomics&Prof. James Hamilton&Winter 2022\\
@@ -140,11 +147,11 @@ Long Run Macroeconomics&Prof. Giacomo Rondina&Spring 2021\\
 Long Run Macroeconomics&Prof. Titan Alon&Fall 2020\\
 Graduate Macroeconomics C&Prof. Johannes Wieland&Spring 2020\\
 Graduate Macroeconomics B&Prof. Giacomo Rondina&Winter 2020
-\end{tabular}
+\end{tabularx}
 
 \section*{PROFESSIONAL ACTIVITIES}
 \subsubsection*{Presentations}
-\begin{tabularx}{\linewidth}{@{}lX}
+\begin{tabularx}{\linewidth}{@{}D X}
 2026 & Work-in-Progress Macro Workshop (Tokyo), CSW Asia Meeting of the Econometric Society (Abu Dhabi)\\
 2025&European Winter Meeting of the Econometric Society (Nicosia), Workshop of the East and South-East Asian Macroeconomic Society 2025 (Tokyo), Summer Workshop on Money, Banking, Payments and Finance (Ottawa), RISE Workshop (Tokyo), DSGE Workshop (Tokyo), Bank of Japan (Tokyo), 2025 CIGS Conference on Macroeconomic Theory and Policy (Tokyo), HIAS Lunch Seminar, Hitotsubashi University (Tokyo), Kyoto University (Kyoto), Aoyama Gakuin University (Tokyo)\\
 2024&AASLE 2024 Conference (Bangkok), Summer Workshop on Economic Theory (Hokkaido), Osaka University (Osaka), HSI2023-9th Hitotsubashi Summer Institute: Macroeconomic Policies (online)\\
